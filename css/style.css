@@ -36,7 +36,7 @@ nav {
 .nav__logo a {
   font-size: 23px;
   font-weight: 600;
-  color: var(--color-quinary);
+  color: var(--color-secondary);
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ nav {
 }
 
 .nav__menu ul li a:hover {
-  color: var(--color-quinary);
+  color: var(--color-secondary);
   text-decoration: underline;
 }
 
@@ -91,7 +91,7 @@ nav {
 .hero__title {
   font-size: 40px;
   font-weight: 700;
-  color: var(--color-quinary);
+  color: var(--color-secondary);
 }
 
 .hero__subtitle {
@@ -121,7 +121,7 @@ nav {
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
-  background-color: var(--color-quinary);
+  background-color: var(--color-secondary);
   color: var(--color-background-dark);
 }
 
