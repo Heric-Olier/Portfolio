@@ -95,7 +95,7 @@ nav {
 }
 
 .hero__subtitle {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--color-primary);
   margin-top: 15px;
@@ -124,6 +124,35 @@ nav {
   background-color: var(--color-secondary);
   color: var(--color-background-dark);
 }
+
+.hero__social-icon img {
+  fill: #f5f5f5;
+}
+
+.hero__social {
+  margin-top: 30px;
+}
+
+.hero__social ul {
+  display: flex;
+}
+
+.hero__social ul li {
+  list-style: none;
+  margin-right: 15px;
+  
+}
+
+.hero__social ul li img {
+  transition: all 0.17s ease-in-out;
+  width: 36px;
+}
+
+.hero__social ul li img:hover {
+  transform: scale(1.1);
+  background-color: var(--color-secondary);
+}
+
 
 /* hero right */
 
