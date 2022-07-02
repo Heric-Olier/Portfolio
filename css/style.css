@@ -157,6 +157,19 @@ span,
   color: var(--color-background-dark);
 }
 
+.hero__button:hover {
+  background-color: var(--color-background-dark);
+}
+
+.fa-download {
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+.hero__text a:hover {
+  color: var(--color-primary);
+}
+
 .hero__social ul li img {
   fill: #f5f5f5;
 }
