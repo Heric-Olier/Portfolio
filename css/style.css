@@ -129,7 +129,7 @@ span,
   }
 }
 
-.hero__description, .about__description {
+.hero__description {
   font-size: 16px;
   font-weight: 400;
   margin-top: 15px;
@@ -181,7 +181,8 @@ span,
 
 /* hero right */
 
-.hero__image, .about__image {
+.hero__image,
+.about__image {
   width: 520px;
   height: 394px;
   display: flex;
@@ -204,10 +205,11 @@ span,
 }
 
 .about__title {
+  text-decoration: underline;
   font-size: 46px;
   font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .about__title strong {
@@ -231,6 +233,19 @@ span,
 
 /* about left */
 
+.about__subtitle {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.about__description {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--color-quaternary);
+}
 .about__image img {
   width: 520px;
 }
