@@ -240,11 +240,19 @@ span,
 }
 
 .about__description {
-  margin-top: 15px;
+  margin-top: 19px;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   color: var(--color-quaternary);
+}
+
+.about__color {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 15px;
+  color: var(--color-secondary);
 }
 .about__image img {
   width: 520px;
