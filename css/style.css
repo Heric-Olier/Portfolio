@@ -4,8 +4,8 @@
   --color-primary: #f5f5f5;
   --color-secondary: #1bf79b;
   --color-tertiary: #fdd857;
-  --color-quaternary: #96979E;
-  --color-quinary: #FD843F;
+  --color-quaternary: #96979e;
+  --color-quinary: #fd843f;
 }
 
 body {
@@ -38,6 +38,10 @@ nav {
   font-weight: 600;
   color: var(--color-secondary);
   text-decoration: none;
+}
+
+.nav__logo a strong {
+  color: var(--color-primary);
 }
 
 .nav__menu ul {
@@ -90,18 +94,42 @@ nav {
 
 .hero__title {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.hero__title strong {
   color: var(--color-secondary);
 }
 
+span,
 .hero__subtitle {
+  display: block;
   font-size: 24px;
   font-weight: 500;
-  color: var(--color-primary);
   margin-top: 15px;
+  color: var(--color-primary);
+  white-space: nowrap;
+  border-right: 4px solid var(--color-secondary);
+  width: 24ch;
+
+  animation: typing 2.8s steps(24), blink 0.5s step-end alternate infinite;
+  overflow: hidden;
 }
 
-.hero__description {
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.hero__description, .about__description {
   font-size: 16px;
   font-weight: 400;
   margin-top: 15px;
@@ -125,7 +153,7 @@ nav {
   color: var(--color-background-dark);
 }
 
-.hero__social-icon img {
+.hero__social ul li img {
   fill: #f5f5f5;
 }
 
@@ -140,7 +168,6 @@ nav {
 .hero__social ul li {
   list-style: none;
   margin-right: 15px;
-  
 }
 
 .hero__social ul li img {
@@ -149,10 +176,8 @@ nav {
 }
 
 .hero__social ul li img:hover {
-  transform: scale(1.1);
-  background-color: var(--color-secondary);
+  transform: scale(1.2);
 }
-
 
 /* hero right */
 
@@ -183,4 +208,23 @@ nav {
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 30px;
+}
+
+.about__title strong {
+  color: var(--color-secondary);
+}
+
+.about__text {
+  width: 520px;
+  height: 394px;
+  max-width: 520px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
 }
