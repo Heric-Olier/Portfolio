@@ -1,155 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heric Olier | Desarrollador Web Front-End</title>
 
     <!-- font -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- fontawesome -->
-    
-    <script src="https://kit.fontawesome.com/4d63ed8f35.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://kit.fontawesome.com/4d63ed8f35.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!---- styles ---->
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
 
-<body>
+  <body>
     <!---- HEADER NAV SECTION ---->
     <header>
-        <!-- <div class="nav__menu-mobile">
+      <nav>
+        <div class="nav__container">
+          <!---- Hamburguer Menu ---->
+          <div class="nav__logo">
+            <a href="index.html">Heric Olier</a>
+          </div>
+          <div class="nav__menu">
+            <ul>
+              <li><a href="#about">Sobre Mi</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#projects">Proyectos</a></li>
+              <li><a href="#study">Formación</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="nav__menu-mobile">
             <div class="nav__menu-mobile-icon">
-                <i class="fas fa-bars"></i>
+              <i class="fas fa-bars"></i>
             </div>
-        </div> -->
-        <nav>
-            <div class="nav__container">
-                <div class="nav__logo">
-                    <a href="index.html">Heric Olier</a>
-                </div>
-                <div class="nav__menu">
-                    <ul>
-                        <li><a href="#about">Sobre Mi</a></li>
-                        <li><a href="#skills">Habilidades</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#study">Formación</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </div>
-             </nav>
+          </div>
         </div>
+      </nav>
 
-        <!---- MAIN - INDEX SECTION ---->
+      <!---- MAIN - INDEX SECTION ---->
 
-             <div class="hero">
-                 <div class="hero__container">
-                    <!---- left side ---->
-                    <div class="hero__image">
-                        <img src="assets/hero/profile_photo-draw.png" alt="hero" />
-                    </div>
-                     <div class="hero__text">
-                         <h1 class="hero__title">Hola! Soy <strong>Heric Olier.</strong></h1>
-                         <span class="hero__subtitle">Desarrollador Web Front-End.</span>
-                         <p class="hero__description">
-                            Soy Entusiasta, estoy super motivado a aprender cada día mas,
-                            apasionado por este hermoso mundo de las IT, 
-                            en busca de nuevos retos que me ayuden a crecer y cumplir mis objetivos.
-                            </p>
-                            <a href="#contact" class="hero__button"> DESCARGAR CV <i class="fa-solid fa-download"></i></a>
-                    <div class="hero__social">
-                            <ul>
-                                <li class="hero__social-icon">
-                                    <a href="https://github.com/Heric-Olier" target="_blank"
-                                    ><img src="assets/hero/logo-github.svg" class="logo-github"/></a>    
-                                </li>
-                                <li>
-                                    <a href=" https://www.linkedin.com/in/heric-olier-36400b238/"
-                                     target="_blank"
-                                     ><img src="assets/hero/logo-linkedin.svg" class="logo-linkedin"/></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/heric_olier/" target="_blank"
-                                    ><img src="assets/hero/logo-instagram.svg" class="logo-instagram"/></a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/heric_olier" target="_blank" class="twitter">
-                                    <img src="assets/hero/logo-twitter.svg" class="logo-twitter"/></a>
-                                </li>
-                                <li>
-                                    <a href="https://codepen.io/Heric_Olier" target="_blank" class="codepen">
-                                    <img src="assets/hero/logo-codepen.svg" class="logo-codepen"/></a>
-                                </li>
-                            </ul>
-                        </div>
-                     </div>
-
-                        <!---- right side ---->
-                    </div>
-                </div>
+      <div class="hero">
+        <div class="hero__container">
+          <!---- left side ---->
+          <div class="hero__image">
+            <img src="assets/hero/profile_photo-draw.png" alt="hero" />
+          </div>
+          <div class="hero__text">
+            <h1 class="hero__title">Hola! Soy <strong>Heric Olier.</strong></h1>
+            <span class="hero__subtitle">Desarrollador Web Front-End.</span>
+            <p class="hero__description">
+              Soy Entusiasta, estoy super motivado a aprender cada día mas,
+              apasionado por este hermoso mundo de las IT, en busca de nuevos
+              retos que me ayuden a crecer y cumplir mis objetivos.
+            </p>
+            <a href="#contact" class="hero__button">
+              DESCARGAR CV <i class="fa-solid fa-download"></i
+            ></a>
+            <div class="hero__social">
+              <ul>
+                <li class="hero__social-icon">
+                  <a href="https://github.com/Heric-Olier" target="_blank"
+                    ><img src="assets/hero/logo-github.svg" class="logo-github"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href=" https://www.linkedin.com/in/heric-olier-36400b238/"
+                    target="_blank"
+                    ><img
+                      src="assets/hero/logo-linkedin.svg"
+                      class="logo-linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/heric_olier/"
+                    target="_blank"
+                    ><img
+                      src="assets/hero/logo-instagram.svg"
+                      class="logo-instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/heric_olier"
+                    target="_blank"
+                    class="twitter"
+                  >
+                    <img
+                      src="assets/hero/logo-twitter.svg"
+                      class="logo-twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://codepen.io/Heric_Olier"
+                    target="_blank"
+                    class="codepen"
+                  >
+                    <img
+                      src="assets/hero/logo-codepen.svg"
+                      class="logo-codepen"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!---- right side ---->
+      </div>
     </header>
 
     <!---- ABOUT SECTION ---->
     <main>
-        <section class="about">
-            <div class="title__container">
-                <h1 id="about" class="about__title">Sobre Mi<strong>.</strong></h1>
+      <section class="about">
+        <div class="title__container">
+          <h1 id="about" class="about__title">Sobre Mi<strong>.</strong></h1>
+        </div>
+        <div class="about__container">
+          <!---- left side ---->
+          <div class="about__text">
+            <h2 class="about__subtitle">Heric Olier</h2>
+            <p class="about__description">
+              Estudiante de desarrollo web full stack, entusiasta, super
+              motivado a aprender cada día mas, apasionado por este hermoso
+              mundo de las IT, en busca de nuevos retos que me ayuden a crecer y
+              cumplir mis objetivos. Hace años atrás me dedique al diseño
+              grafico, ahora quiero enfocar toda mi energía en convertirme en
+              Software Developer que es lo que realmente me apasiona.
+            </p>
+            <p class="about__color">
+              Siempre dispuesto al trabajo en equipo, full autodidacta y en
+              aprendizaje continuo.
+            </p>
+            <!---- right side ---->
+          </div>
+          <div class="about__image">
+            <img src="assets/hero/about-image-complete.svg" alt="about" />
+          </div>
+        </div>
+      </section>
+
+      <!---- SKILLS SECTION ---->
+
+      <section class="skills">
+        <div class="title__container">
+          <h1 id="skills" class="skills__title">
+            Habilidades<strong>.</strong>
+          </h1>
+        </div>
+        <div class="skills__container">
+          <div class="skills__logo-top">
+            <div class="skills__logo">
+              <img src="assets/hero/html-icon.png" alt="html" />
+              <img src="assets/hero/css-icon.png" alt="css" />
+              <img src="assets/hero/js-icon.png" alt="js" />
             </div>
-            <div class="about__container">
-                <!---- left side ---->
-                <div class="about__text">
-                    <h2 class="about__subtitle">Heric Olier</h2>
-                    <p class="about__description">
-                        Estudiante de desarrollo web full stack, entusiasta, 
-                        super motivado a aprender cada día mas, apasionado por este hermoso mundo de las IT, 
-                        en busca de nuevos retos que me ayuden a crecer y cumplir mis objetivos. 
-                        Hace años atrás me dedique al diseño grafico, ahora quiero enfocar toda mi energía 
-                        en convertirme en Software Developer que es lo que realmente me apasiona.
-                    </p>
-                    <p class="about__color">
-                        Siempre dispuesto al trabajo en equipo, full autodidacta y en aprendizaje continuo.
-                    </p>
-                    <!---- right side ---->
-                </div>
-                <div class="about__image">
-                    <img src="assets/hero/about-image-complete.svg" alt="about" />
-                </div>
-            </div>
-            <div/>
-        </section>
-
-            <!---- SKILLS SECTION ---->
-
-            <section class="skills">
-                <div class="title__container">
-                    <h1 id="skills" class="skills__title">Habilidades<strong>.</strong></h1>
-                </div>
-                <div class="skills__container">
-                   <div class="skills__logo-top">
-                    <div class="skills__logo">
-                        <img src="assets/hero/html-icon.png" alt="html" />
-                        <img src="assets/hero/css-icon.png" alt="css">
-                        <img src="assets/hero/js-icon.png" alt="js">
-                            
-                    </div>
-
-                   </div>
-                   
-                </div>
-
-            </section>
-
+          </div>
+        </div>
+      </section>
     </main>
-
-
-
-    
-</body>
+  </body>
 </html>

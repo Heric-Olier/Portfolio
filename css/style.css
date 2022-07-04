@@ -53,6 +53,10 @@ nav {
   display: flex;
 }
 
+.nav__menu-mobile {
+  display: none;
+}
+
 .nav__menu ul li {
   list-style: none;
   margin-left: 25px;
