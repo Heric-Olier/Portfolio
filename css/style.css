@@ -13,6 +13,8 @@ body {
   background: var(--color-background-dark);
 }
 
+/*! <--------- Header Nav Section --------->*/
+
 header {
   height: 100vh;
   background-color: var(--color-background-light);
@@ -68,6 +70,8 @@ nav {
   color: var(--color-secondary);
   text-decoration: underline;
 }
+
+/*! <--------- Main - Index section --------->*/
 
 .hero {
   width: 100%;
@@ -210,7 +214,7 @@ span,
   width: 440px;
 }
 
-/* Main - About */
+/*! <--------- About Section --------->*/
 
 .about {
   width: 100%;
@@ -289,7 +293,7 @@ span,
   width: 530px;
 }
 
-/* skills */
+/*! <--------- Skills Section --------->*/
 
 .skills {
   width: 100%;
