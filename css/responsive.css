@@ -2,6 +2,67 @@
   --color-secondary: #1bf79b;
 }
 
+@media screen and (max-width: 1160px) {
+  .nav__container,
+  .hero__container {
+    width: 90%;
+    max-width: 980px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 62px;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .nav__container {
+    width: 90%;
+    height: 62px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .nav__menu ul {
+    display: none;
+  }
+
+  .nav__menu-mobile {
+    display: flex;
+  }
+
+  .nav__menu-mobile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    cursor: pointer;
+    color: var(--color-secondary);
+  }
+
+  .hero__image {
+    width: 350px;
+    justify-content: center;
+    padding-top: 120px;
+  }
+
+  .hero__image img {
+    width: 350px;
+  }
+
+  .hero__text {
+    padding-top: 50px;
+  }
+
+  .hero__container,
+  .about__container {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .hero__text {
     width: 95%;
@@ -19,16 +80,17 @@
 
   .hero__description {
     font-size: 13.5px;
+    text-align: center;
   }
 
   .hero__image {
-    width: 280px;
+    width: 100%;
     justify-content: center;
     padding-top: 90px;
   }
 
   .hero__image img {
-    width: 280px;
+    width: 68%;
   }
 
   .about,
@@ -81,52 +143,5 @@
 
   .skills__title {
     font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  nav {
-    display: flex;
-    justify-content: center;
-    height: 62px;
-    position: fixed;
-    z-index: 9999;
-  }
-
-  .nav__container {
-    width: 90%;
-    height: 62px;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-
-  .nav__menu ul {
-    display: none;
-  }
-
-  .nav__menu-mobile {
-    display: flex;
-  }
-
-  .nav__menu-mobile-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 33px;
-    cursor: pointer;
-    color: var(--color-secondary);
-  }
-
-  .hero__container,
-  .about__container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1160px) {
-  .nav__container,
-  .hero__container {
-    width: 90%;
-    max-width: 980px;
   }
 }

@@ -95,7 +95,6 @@ nav {
 
 .hero__text {
   width: 520px;
-  height: 404px;
   max-width: 520px;
   display: flex;
   flex-direction: column;
@@ -245,7 +244,6 @@ span,
 
 .about__text {
   width: 520px;
-  height: 394px;
   max-width: 520px;
 }
 
