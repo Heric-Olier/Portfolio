@@ -1,4 +1,4 @@
-# Work in Progress <img src="https://i.imgur.com/UsL6IWU.png" width='65px' >
+# Work in Progress... <img src="https://i.imgur.com/UsL6IWU.png" width='75px' >
  
 ---
 
