@@ -54,7 +54,7 @@
   }
 
   .hero__text {
-    padding-top: 50px;
+    padding-bottom: 70px;
   }
 
   .hero__container,
@@ -67,7 +67,7 @@
   .hero__text {
     width: 95%;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 61px;
   }
 
   .hero__title {
@@ -91,6 +91,10 @@
 
   .hero__image img {
     width: 68%;
+  }
+
+  .hero__social ul li {
+    margin: 0 10px;
   }
 
   .about,
