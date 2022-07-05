@@ -4,10 +4,42 @@
 
 @media screen and (max-width: 1160px) {
   .nav__container,
-  .hero__container {
-    width: 90%;
+  .hero__container,
+  .about,
+  .title__container {
     max-width: 980px;
   }
+
+  .hero__image {
+    width: 380px;
+  }
+
+  .hero__image img {
+    width: 380px;
+  }
+
+  .about__image {
+    width: 430px;
+  }
+
+  .about__image img {
+    width: 430px;
+  }
+
+  .about__subtitle {
+    font-size: 33px;
+  }
+
+  .about__text {
+    width: 480px;
+    max-width: 480px;
+  }
+
+  .about__description,
+  .about__color {
+    font-size: 17px;
+  }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -46,28 +78,76 @@
   .hero__image {
     width: 350px;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 90px;
   }
 
   .hero__image img {
-    width: 350px;
+    width: 330px;
   }
 
   .hero__text {
-    padding-bottom: 70px;
+    width: 95%;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .hero__social ul li {
+    margin: 0 10px;
   }
 
   .hero__container,
   .about__container {
     flex-direction: column;
   }
+
+  .about__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .title__container {
+    justify-content: center;
+  }
+
+  .about__title {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+
+  .about__subtitle {
+    font-size: 37px;
+    width: 90%;
+  }
+
+  .about__description,
+  .about__color {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .about__image {
+    width: 100%;
+    padding-top: 55px;
+  }
+
+  .about__image img {
+    width: 90%;
+  }
+  .skills__title {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .hero__text {
-    width: 95%;
-    align-items: center;
-    padding-top: 61px;
+    padding-bottom: 80px;
   }
 
   .hero__title {
@@ -86,7 +166,8 @@
   .hero__image {
     width: 100%;
     justify-content: center;
-    padding-top: 90px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   .hero__image img {
@@ -102,47 +183,24 @@
     padding: 65px 0;
   }
 
-  .about__image {
-    width: 100%;
-    padding-top: 55px;
-  }
-
   .about__image img {
     width: 90%;
   }
 
-  .about__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .title__container {
-    justify-content: center;
-  }
-
   .about__title {
     font-size: 40px;
-    margin-bottom: 80px;
   }
 
   .about__subtitle {
     font-size: 26px;
-    width: 90%;
   }
 
   .about__description {
     font-size: 16px;
-    width: 90%;
   }
 
   .about__color {
     font-size: 16px;
-    width: 90%;
   }
 
   .skills__title {
