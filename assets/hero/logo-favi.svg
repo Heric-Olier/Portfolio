@@ -6,32 +6,17 @@ viewBox="0 0 1550.78 1550.78"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
  <defs>
-  <font id="FontID0" horiz-adv-x="777" font-variant="normal" class="str0" style="fill-rule:nonzero" font-style="normal" font-weight="900">
-	<font-face 
-		font-family="Arial Black">
-		<font-face-src>
-			<font-face-name name="Arial Black"/>
-		</font-face-src>
-	</font-face>
-   <missing-glyph><path d="M0 0z"/></missing-glyph>
-   <glyph unicode="H" horiz-adv-x="833" d="M74.001 715.999l221 0 0 -249.999 241.998 0 0 249.999 222 0 0 -715.999 -222 0 0 290.001 -241.998 0 0 -290.001 -221 0 0 715.999z"/>
-  </font>
   <style type="text/css">
    <![CDATA[
-    @font-face { font-family:"Arial Black";font-variant:normal;font-style:normal;font-weight:900;src:url("#FontID0") format(svg)}
-    .str0 {stroke-width:24.34;stroke-linejoin:round;stroke-miterlimit:2.61313}
-    .str1 {stroke:#AAFAD9;stroke-width:34.54;stroke-linejoin:round;stroke-miterlimit:2.61313}
+    .str0 {stroke:#AAFAD9;stroke-width:34.54;stroke-linejoin:round;stroke-miterlimit:2.61313}
     .fil0 {fill:#1BF79B}
-    .fil1 {fill:#1D1F20}
-    .fnt0 {font-weight:900;font-size:1419px;font-family:'Arial Black'}
+    .fil1 {fill:#1D1F20;fill-rule:nonzero}
    ]]>
   </style>
  </defs>
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
   <circle class="fil0" cx="775.39" cy="775.39" r="775.39"/>
-  <g transform="matrix(0.956582 0 0 1 925.846 -3702.47)">
-   <text x="-748.3" y="4985.86"  class="fil1 str1 fnt0">H</text>
-  </g>
+  <polygon class="fil1 str0" points="318.73,276.26 613.38,276.26 613.38,624.71 936.03,624.71 936.03,276.26 1232.02,276.26 1232.02,1274.21 936.03,1274.21 936.03,870.01 613.38,870.01 613.38,1274.21 318.73,1274.21 "/>
  </g>
 </svg>

@@ -124,7 +124,7 @@ span,
   border-right: 4px solid var(--color-secondary);
   width: 24ch;
   animation: typing 2.8s steps(24),
-  blink 0.5s step-end forwards alternate infinite;
+    blink 0.5s step-end forwards alternate infinite;
   overflow: hidden;
 }
 
@@ -319,13 +319,27 @@ span,
   align-items: center;
 }
 
-.skills__logo {
-  width: 100%;
+.skills__logo-container {
+  width: 100px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.skills__logo img {
+.skills__logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__logo svg {
   width: 100px;
+}
+
+.skills__logo p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-quaternary);
 }
