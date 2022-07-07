@@ -210,16 +210,15 @@ span,
 /* hero left */
 
 .hero__image {
-  width: 440px;
-  height: 440px;
+  width: 420px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .hero__image img {
-  width: 440px;
-  border: 19px solid var(--color-secondary);
+  width: 420px;
+  border: 18px solid var(--color-secondary);
   border-radius: 1000px;
 }
 

@@ -11,12 +11,12 @@
   }
 
   .hero__image {
-    width: 380px;
+    width: 370px;
   }
 
   .hero__image img {
-    border: 17px solid var(--color-secondary);
-    width: 380px;
+    width: 370px;
+    border: 16px solid var(--color-secondary);
   }
 
   .about__image {
