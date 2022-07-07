@@ -102,6 +102,7 @@
   .hero__container,
   .about__container {
     flex-direction: column;
+    /* height: auto; */
   }
 
   .about__text {
