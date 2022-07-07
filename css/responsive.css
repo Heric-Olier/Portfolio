@@ -146,6 +146,14 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .skills__logo-top,
+  .skills__logo-bottom,
+  .skills__container {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .hero__text {
     padding-bottom: 80px;
