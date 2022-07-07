@@ -327,7 +327,8 @@ span,
 }
 
 .skills__logo-bottom {
-  margin-top: 50px;
+  margin-top: 35px;
+  /* padding: 0 230px; */
 }
 
 .skills__logo {
@@ -346,13 +347,13 @@ span,
 
 .skills__logo svg:hover,
 .skills__logo p:hover { 
-  color: #1bf79b;
+  color: var(--color-secondary);
 }
 
 .skills__logo p {
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
-  color: var(--color-quaternary);
+  color: var(--color-secondary);
   transition: all 0.17s ease-in-out;
 }

@@ -40,6 +40,11 @@
   .about__color {
     font-size: 17px;
   }
+
+  .skills__logo-top,
+  .skills__logo-bottom {
+    max-width: 980px;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -152,6 +157,25 @@
   .skills__container {
     flex-direction: column;
   }
+
+  .skills__container {
+    max-width: 480px;
+  }
+
+  .skills__logo-top {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 35px;
+
+    padding: 0;
+  }
+
+  .skills__logo-bottom {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 35px;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -224,5 +248,14 @@
 
   .skills__title {
     font-size: 40px;
+  }
+
+  .skills__logo-top, 
+  .skills__logo-bottom {
+   padding: 0 50px;
+  }
+
+  .skills__logo svg {
+    width: 60px;
   }
 }
