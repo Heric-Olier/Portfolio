@@ -342,7 +342,8 @@ span,
 .skills__logo svg {
   width: 70px;
   color: var(--color-quaternary);
-  transition: all 0.17s ease-in-out;
+  transition: color 2s ease-out 100ms;
+  /* transition: all 0.17s ease-in-out; */
 }
 
 .skills__logo svg:hover,
