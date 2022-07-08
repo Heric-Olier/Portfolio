@@ -45,6 +45,12 @@
   .skills__logo-bottom {
     max-width: 980px;
   }
+
+  .projects__card {
+    width: 100%;
+    max-width: 980px;
+    height: 460px;
+  } 
 }
 
 @media screen and (max-width: 980px) {
@@ -148,6 +154,12 @@
   }
   .skills__title {
     font-size: 40px;
+  }
+
+  .projects__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -258,5 +270,11 @@
 
   .skills__logo svg {
     width: 60px;
+  }
+
+  .projects__card {
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
   }
 }
