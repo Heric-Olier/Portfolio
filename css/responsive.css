@@ -50,7 +50,7 @@
     width: 100%;
     max-width: 980px;
     height: 460px;
-  } 
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -269,9 +269,9 @@
     font-size: 40px;
   }
 
-  .skills__logo-top, 
+  .skills__logo-top,
   .skills__logo-bottom {
-   padding: 0 50px;
+    padding: 0 50px;
   }
 
   .skills__logo svg {
@@ -287,10 +287,9 @@
   .projects__card h3 {
     font-size: 25px;
     margin-top: 20px;
-  } 
+  }
 
   .projects__btn {
-    padding: 0 15px 15px 15px; 
+    padding: 0 15px 15px 15px;
   }
-  
 }

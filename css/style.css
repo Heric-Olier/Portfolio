@@ -429,12 +429,18 @@ span,
   width: 48%;
   height: 49px;
   border-radius: 10px;
-  border: 3px solid var(--color-background-dark);
+
   font-size: 21px;
   font-weight: 400;
   background-color: var(--color-background-light);
   color: var(--color-primary);
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.17s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects__btn a:hover {
+  background-color: var(--color-quaternary);
+  color: var(--color-background-dark);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
