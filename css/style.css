@@ -234,7 +234,8 @@ span,
 }
 
 .about__title,
-.skills__title {
+.skills__title,
+.projects__title {
   text-decoration: underline;
   font-size: 46px;
   font-weight: 700;
@@ -243,7 +244,8 @@ span,
 }
 
 .about__title strong,
-.skills__title strong {
+.skills__title strong,
+.projects__title strong {
   color: var(--color-secondary);
 }
 
@@ -254,7 +256,8 @@ span,
 
 .about__container,
 .skills__container,
-.title__container {
+.title__container,
+.projects__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -342,7 +345,7 @@ span,
 .skills__logo svg {
   width: 70px;
   color: var(--color-quaternary);
-  transition: color 2s ease-out 100ms;
+  transition: color 1.5s ease-out 100ms;
   /* transition: all 0.17s ease-in-out; */
 }
 
@@ -357,4 +360,20 @@ span,
   margin-top: 8px;
   color: var(--color-secondary);
   transition: all 0.17s ease-in-out;
+}
+
+/*! <--------- Projects Section --------->*/
+
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  padding: 130px 0;
+  background-color: var(--color-background-dark);
+}
+
+.projects__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
 }
