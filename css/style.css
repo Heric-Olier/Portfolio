@@ -413,9 +413,28 @@ span,
 }
 
 .projects__btn {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px 30px 30px;
   position: absolute;
   bottom: 0;
+}
+
+.projects__btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  height: 49px;
+  border-radius: 10px;
+  border: 3px solid var(--color-background-dark);
+  font-size: 21px;
+  font-weight: 400;
+  background-color: var(--color-background-light);
+  color: var(--color-primary);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.17s ease-in-out;
 }

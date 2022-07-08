@@ -161,6 +161,12 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .projects__btn a {
+    width: 49%;
+    font-size: 17px;
+    height: 41px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -277,4 +283,14 @@
     max-width: 320px;
     height: 320px;
   }
+
+  .projects__card h3 {
+    font-size: 25px;
+    margin-top: 20px;
+  } 
+
+  .projects__btn {
+    padding: 0 15px 15px 15px; 
+  }
+  
 }
