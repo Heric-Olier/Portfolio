@@ -299,5 +299,7 @@
 
   .projects__btn a {
     padding: 0.35em 1.65em;
+    height: 40px;
+    width: 48%;
   }
 }
