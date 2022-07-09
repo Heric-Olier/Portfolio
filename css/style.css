@@ -218,8 +218,8 @@ span,
 
 .animated-border {
   position: absolute;
-  width: 415px;
-  height: 415px;
+  width: 380px;
+  height: 380px;
   border: 15px  var(--color-secondary);
   border-top: 15px  var(--color-background-dark);
   border-radius: 50%;
@@ -284,7 +284,7 @@ span,
 }
 
 .hero__image img {
-  width: 400px;
+  width: 365px;
   /* border: 18px solid var(--color-secondary);
   border-radius: 1000px; */
 }
