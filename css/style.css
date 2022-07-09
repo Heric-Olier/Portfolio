@@ -345,12 +345,14 @@ span,
 .skills__logo svg {
   width: 70px;
   color: var(--color-quaternary);
-  transition: color 1.5s ease-out 100ms;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  /* transition: color 1.5s ease-out 100ms; */
   /* transition: all 0.17s ease-in-out; */
 }
 
 .skills__logo svg:hover,
 .skills__logo p:hover {
+  transform: scale(1.12);
   color: var(--color-secondary);
 }
 
@@ -387,7 +389,7 @@ span,
   position: relative;
   margin: 0 auto;
   background-color: var(--color-background-light);
-  transition: all .25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .projects__card:hover {
@@ -403,7 +405,6 @@ span,
   background-size: cover;
   object-fit: cover;
 }
-
 
 .projects__card h3 {
   font-size: 30px;
@@ -428,22 +429,57 @@ span,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 48%;
-  height: 49px;
+  padding: 0.75em 3.75em;
+  border: 0.25rem solid var(--color-background-light);
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  /* width: 48%;
+  height: 49px; */
   border-radius: 10px;
-
   font-size: 21px;
   font-weight: 400;
   background-color: var(--color-background-light);
   color: var(--color-primary);
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .projects__btn a:hover {
-  background-color: var(--color-quaternary);
+  background-color: transparent;
   color: var(--color-background-dark);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  border: 1px solid var(--color-background-light);
+  font-weight: 600;
+}
+
+.projects__btn a::after {
+  content: "";
+  background: #ecf0f1;
+  position: absolute;
+  z-index: -1;
+  padding: 0.75em 3.75em;
+  display: block;
+}
+.projects__btn a[class^="slide"]::after {
+  transition: all 0.45s;
+}
+.projects__btn a[class^="slide"]:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+.projects__btn a.slide_from_left::after {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+}
+
+.projects__btn a.slide_from_right::after {
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -100%;
 }
