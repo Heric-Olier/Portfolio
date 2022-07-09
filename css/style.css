@@ -359,7 +359,7 @@ span,
 .skills__logo p {
   font-size: 16px;
   font-weight: 400;
-  margin-top: 8px;
+  margin-top: 12px;
   color: var(--color-secondary);
   transition: all 0.17s ease-in-out;
 }
