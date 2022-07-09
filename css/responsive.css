@@ -14,9 +14,13 @@
     width: 370px;
   }
 
+  .animated-border {
+    width: 400px;
+    height: 400px;
+  }
+
   .hero__image img {
     width: 370px;
-    border: 16px solid var(--color-secondary);
   }
 
   .about__image {
@@ -94,6 +98,11 @@
     width: 350px;
     justify-content: center;
     padding-top: 90px;
+  }
+
+  .animated-border {
+    width: 360px;
+    height: 360px;
   }
 
   .hero__image img {
@@ -225,9 +234,17 @@
     padding-bottom: 20px;
   }
 
+  .animated-border {
+    width: 265px;
+    height: 265px;
+    border: 12px var(--color-secondary);
+    border-top: 12px var(--color-background-dark);
+    border-radius: 50%;
+    border-style: outset;
+  }
+
   .hero__image img {
-    border: 12px solid var(--color-secondary);
-    width: 68%;
+    width: 240px;
   }
 
   .hero__social ul li {

@@ -212,14 +212,81 @@ span,
 .hero__image {
   width: 420px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
+.animated-border {
+  position: absolute;
+  width: 415px;
+  height: 415px;
+  border: 15px  var(--color-secondary);
+  border-top: 15px  var(--color-background-dark);
+  border-radius: 50%;
+  border-style: outset;
+  transition: all 0.37s ease-in-out;
+}
+
+.animated-border:hover {
+  border-color: var(--color-background-dark);
+  border-top-color: var(--color-background-light);
+}
+
+.animated-border {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-animation-name: rotate;
+  transition-duration: 3.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-transition-property: -moz-transform;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 3.8s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  transition-property: transform;
+  animation-name: rotate;
+  animation-duration: 3.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__image svg {
+  position: absolute;
+}
+
 .hero__image img {
-  width: 420px;
-  border: 18px solid var(--color-secondary);
-  border-radius: 1000px;
+  width: 400px;
+  /* border: 18px solid var(--color-secondary);
+  border-radius: 1000px; */
 }
 
 /*! <--------- About Section --------->*/
@@ -352,7 +419,7 @@ span,
 
 .skills__logo svg:hover,
 .skills__logo p:hover {
-  transform: scale(1.12);
+  transform: scale(1.18);
   color: var(--color-secondary);
 }
 
