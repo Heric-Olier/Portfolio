@@ -316,6 +316,10 @@
     width: 60px;
   }
 
+  .projects__item {
+    gap: 32px;
+  }
+
   .projects__card {
     width: 100%;
     max-width: 320px;

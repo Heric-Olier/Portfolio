@@ -220,8 +220,8 @@ span,
   position: absolute;
   width: 380px;
   height: 380px;
-  border: 15px  var(--color-secondary);
-  border-top: 15px  var(--color-background-dark);
+  border: 15px var(--color-secondary);
+  border-top: 15px var(--color-background-dark);
   border-radius: 50%;
   border-style: outset;
   transition: all 0.37s ease-in-out;
@@ -302,6 +302,7 @@ span,
 
 .about__title,
 .skills__title,
+.study__title,
 .projects__title {
   text-decoration: underline;
   font-size: 46px;
@@ -312,6 +313,7 @@ span,
 
 .about__title strong,
 .skills__title strong,
+.study__title strong,
 .projects__title strong {
   color: var(--color-secondary);
 }
@@ -431,19 +433,28 @@ span,
   transition: all 0.17s ease-in-out;
 }
 
-/*! <--------- Projects Section --------->*/
+/*! <--------- Study Section --------->*/
 
-.projects {
+.study {
   width: 100%;
   margin: 0 auto;
   padding: 130px 0;
   background-color: var(--color-background-dark);
 }
 
+/*! <--------- Projects Section --------->*/
+
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  padding: 130px 0;
+  background-color: var(--color-background-light);
+}
+
 .projects__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 37px;
+  gap: 50px;
   margin: 0 auto;
 }
 
@@ -460,7 +471,7 @@ span,
 }
 
 .projects__card:hover {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   transform: scale(1.09);
 }
 .projects__card img {
