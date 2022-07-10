@@ -460,11 +460,10 @@ span,
   margin-bottom: 60px;
 }
 
-.study__item,
-.study__item-bottom {
+.study__item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 90px 50px;
   margin: 0 auto;
 }
 
@@ -479,6 +478,22 @@ span,
   background-color: var(--color-background-light);
   transition: all 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
+.study__title-card {
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--color-secondary);
+  position: absolute;
+  bottom: -45px;
+}
+
+.study__title-card strong {
+  color: var(--color-quaternary);
+}
+
+
 
 .study__card:hover .alura__bw {
   opacity: 0;
