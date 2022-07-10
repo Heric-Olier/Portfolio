@@ -224,6 +224,11 @@
     gap: 35px;
     padding: 0;
   }
+
+  .study__item {
+    grid-template-rows: 1fr 1fr 1fr;
+   
+  }
 }
 
 @media screen and (max-width: 480px) {

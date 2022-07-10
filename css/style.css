@@ -430,7 +430,7 @@ span,
   font-size: 16px;
   font-weight: 400;
   margin-top: 12px;
-  color: var(--color-secondary);
+  color: var(--color-quaternary);
   transition: all 0.17s ease-in-out;
 }
 
@@ -443,7 +443,25 @@ span,
   background-color: var(--color-background-dark);
 }
 
-.study__item {
+.title__container-study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.study__container {
+  flex-direction: column;
+}
+
+.study__title {
+  margin-bottom: 60px;
+}
+
+.study__item,
+.study__item-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
@@ -474,9 +492,21 @@ span,
   opacity: 0;
 }
 
+.study__card:hover .js__bw {
+  opacity: 0;
+}
+
+.study__card:hover .react__bw {
+  opacity: 0;
+}
+
+.study__card:hover .freecodecamp__bw {
+  opacity: 0;
+}
+
 .study__card:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
-  transform: scale(1.09);
+  transform: scale(1.11);
 }
 
 .study__card img {
@@ -491,7 +521,10 @@ span,
 
 .alura__bw,
 .henry__bw,
-.censa__bw {
+.censa__bw,
+.js__bw,
+.react__bw,
+.freecodecamp__bw {
   position: absolute;
 }
 
