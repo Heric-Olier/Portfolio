@@ -592,6 +592,7 @@ span,
 
 .projects__card h3 {
   font-size: 30px;
+  color: var(--color-background-dark);
   font-weight: 600;
   text-decoration: underline;
   margin-top: 25px;
