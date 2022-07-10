@@ -582,6 +582,7 @@ span,
   background-position: center;
   background-size: cover;
   object-fit: cover;
+  transition: all .5s;
 }
 
 .projects__card h3 {
