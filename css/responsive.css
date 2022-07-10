@@ -197,6 +197,10 @@
     font-size: 18px;
     height: 50px;
   }
+
+  .study__item {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -226,8 +230,7 @@
   }
 
   .study__item {
-    grid-template-rows: 1fr 1fr 1fr;
-   
+    grid-template-columns: 1fr;
   }
 }
 

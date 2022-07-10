@@ -493,8 +493,6 @@ span,
   color: var(--color-quaternary);
 }
 
-
-
 .study__card:hover .alura__bw {
   opacity: 0;
 }
