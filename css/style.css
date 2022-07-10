@@ -424,6 +424,7 @@ span,
 .skills__logo p:hover {
   transform: scale(1.18);
   color: var(--color-secondary);
+  transition: all .5s;
 }
 
 .skills__logo p {
