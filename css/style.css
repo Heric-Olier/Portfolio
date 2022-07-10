@@ -530,6 +530,7 @@ span,
   background-position: center;
   background-size: cover;
   object-fit: cover;
+  transition: all .5s;
 }
 
 .alura__bw,
