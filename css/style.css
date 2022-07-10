@@ -410,21 +410,25 @@ span,
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.skills__logo:hover {
+  transform: scale(1.2);
+}
+
+.skills__logo:hover svg,
+.skills__logo:hover p {
+  color: var(--color-secondary);
 }
 
 .skills__logo svg {
   width: 70px;
   color: var(--color-quaternary);
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: 0.5s;
+
   /* transition: color 1.5s ease-out 100ms; */
   /* transition: all 0.17s ease-in-out; */
-}
-
-.skills__logo svg:hover,
-.skills__logo p:hover {
-  transform: scale(1.18);
-  color: var(--color-secondary);
-  transition: all .5s;
 }
 
 .skills__logo p {
@@ -531,7 +535,7 @@ span,
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .alura__bw,
@@ -583,7 +587,7 @@ span,
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .projects__card h3 {
