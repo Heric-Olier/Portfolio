@@ -44,7 +44,6 @@
     <header>
       <nav>
         <div class="nav__container">
-          <!---- Hamburguer Menu ---->
           <div class="nav__logo">
             <a href="index.html">Heric Olier</a>
           </div>
@@ -57,10 +56,11 @@
               <li><a href="#contact">Contacto</a></li>
             </ul>
           </div>
+          <!---- Hamburguer Menu ---->
           <div class="nav__menu-mobile">
-            <div class="nav__menu-mobile-icon">
-              <i class="fas fa-bars"></i>
-            </div>
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
           </div>
         </div>
       </nav>
@@ -268,9 +268,9 @@
     <!---- ABOUT SECTION ---->
 
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <div class="title__container">
-          <h1 id="about" class="about__title">Sobre Mi<strong>.</strong></h1>
+          <h1 class="about__title">Sobre Mi<strong>.</strong></h1>
         </div>
         <div class="about__container">
           <!---- left side ---->
@@ -298,9 +298,9 @@
 
       <!---- SKILLS SECTION ---->
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="title__container">
-          <h1 id="skills" class="skills__title">
+          <h1 class="skills__title">
             Habilidades<strong>.</strong>
           </h1>
         </div>
@@ -536,9 +536,9 @@
 
       <!---- STUDY SECTION ---->
 
-      <section class="study">
+      <section class="study" id="study">
         <div class="title__container-study">
-          <h1 id="study" class="study__title">Formación<strong>.</strong></h1>
+          <h1 class="study__title">Formación<strong>.</strong></h1>
         </div>
         <div class="study__container">
           <!---- STUDY ITEM TOP ---->
@@ -643,9 +643,9 @@
 
       <!---- PROJECTS SECTION ---->
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="title__container">
-          <h1 id="projects" class="projects__title">
+          <h1 class="projects__title">
             Proyectos<strong>.</strong>
           </h1>
         </div>
@@ -720,7 +720,7 @@
 
       <!---- CONTACT SECTION ---->
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__container">
           <div class="contact__item">
             <div class="contact-profile">
@@ -940,8 +940,9 @@
             ></a>
           </li>
         </ul>
-
       </div>
+      </div >
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

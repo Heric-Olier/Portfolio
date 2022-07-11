@@ -109,8 +109,44 @@
     display: none;
   }
 
+  /* Hamburguer Menu */
+
   .nav__menu-mobile {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 36px;
+    width: 41px;
+    align-items: center;
+    color: var(--color-secondary);
+    cursor: pointer;
+  }
+
+  .nav__menu-mobile span {
+    display: block;
+    width: 33px;
+    height: 5px;
+    margin-top: 4px;
+    background-color: var(--color-secondary);
+    border-radius: 40px;
+    transform-origin: 3px 100%;
+    transition: all 350ms;
+    cursor: pointer;
+  }
+
+  .line1__bars-menu.active {
+    transform: rotate(45deg);
+    translate: -2px, 1px;
+  }
+
+  .line2__bars-menu.active {
+    opacity: 0;
+    margin-left: -30px;
+  }
+
+  .line3__bars-menu.active {
+    transform: rotate(-45deg);
+    translate: -4px, 2px;
   }
 
   .nav__menu-mobile-icon {
