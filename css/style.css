@@ -179,22 +179,26 @@ span,
   margin-top: 30px;
 }
 
-.hero__social ul {
+.hero__social ul,
+.footer__social ul {
   display: flex;
 }
 
-.hero__social ul li {
+.hero__social ul li,
+.footer__social ul li {
   list-style: none;
   margin-left: 15px;
 }
 
 .hero__social ul li img,
+.footer__social ul li img,
 .social__icons {
   transition: all 0.17s ease-in-out;
   width: 36px;
 }
 
 .hero__social ul li img:hover,
+.footer__social ul li img:hover,
 .social__icons:hover {
   transform: scale(1.2);
 }
@@ -678,10 +682,11 @@ span,
   right: -100%;
 }
 
-/*! <--------- Study Section --------->*/
+/*! <--------- Contact Section --------->*/
 
 .contact {
   width: 100%;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 130px 0;
   background-color: var(--color-background-dark);
@@ -773,11 +778,38 @@ span,
   font-size: 21px;
   text-decoration: none;
   margin-bottom: 50px;
-
 }
 
 .border-contact {
   width: 225px;
   height: 225px;
   top: 29px;
+}
+
+/*! <--------- Footer Section --------->*/
+
+.footer {
+  width: 100%;
+  height: 170px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 130px 0;
+  border-top: 2px solid var(--color-background-light);
+  background-color: var(--color-background-dark);
+}
+
+.footer__item {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 90px;
+}
+
+.footer__reserved {
+  display: flex;
+  color: var(--color-primary);
+  font-size: 17px;
+  font-weight: 500;
 }
