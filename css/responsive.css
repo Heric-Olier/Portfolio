@@ -78,6 +78,15 @@
     height: 225px;
     top: 29px;
   }
+
+  .footer {
+    width: 90%;
+    max-width: 980px;
+  }
+
+  .footer__item {
+    max-width: 980px;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -257,6 +266,28 @@
   .contact__info strong {
     font-size: 31px;
   }
+
+  .footer {
+    max-width: 480px;
+  }
+
+  .footer__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__reserved {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .footer__reserved p {
+    margin-bottom: 10px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -393,7 +424,7 @@
 
   .contact__one a,
   .fa-envelope {
-    font-size: 20px;
+    font-size: 18.5px;
   }
 
   .border-contact {

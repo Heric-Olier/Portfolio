@@ -113,7 +113,6 @@ nav {
   color: var(--color-secondary);
 }
 
-span,
 .hero__subtitle {
   display: block;
   font-size: 24px;
@@ -716,7 +715,7 @@ span,
   align-items: center;
   justify-content: center;
   position: relative;
-  bottom: 170px;
+  bottom: 135px;
 }
 
 .contact-profile img {
@@ -738,6 +737,8 @@ span,
   font-weight: 600;
   line-height: 55px;
   margin: 0 auto;
+  position: relative;
+  top: 45px;
 }
 
 .contact__info strong {
@@ -756,7 +757,7 @@ span,
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   position: relative;
-  bottom: 80px;
+  bottom: 45px;
 }
 
 .contact__card-btn:hover {
@@ -778,6 +779,11 @@ span,
   font-size: 21px;
   text-decoration: none;
   margin-bottom: 50px;
+}
+
+.fa-phone {
+  margin-right: 3px;
+  color: var(--color-secondary);
 }
 
 .border-contact {
@@ -812,4 +818,16 @@ span,
   color: var(--color-primary);
   font-size: 17px;
   font-weight: 500;
+}
+
+.footer__reserved p em,
+.fa-copyright {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.footer__reserved p strong {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-quaternary);
 }
