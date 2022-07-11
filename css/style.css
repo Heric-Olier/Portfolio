@@ -284,6 +284,7 @@ span,
 }
 
 .hero__image img {
+  border-radius: 1000px;
   width: 365px;
   /* border: 18px solid var(--color-secondary);
   border-radius: 1000px; */
