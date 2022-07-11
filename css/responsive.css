@@ -203,7 +203,7 @@
   }
 
   .title__contact {
-    padding-bottom: 90px;
+    padding-bottom: 130px;
   }
 }
 
@@ -235,6 +235,15 @@
 
   .study__item {
     grid-template-columns: 1fr;
+  }
+
+  .contact__info h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .contact__info strong {
+    font-size: 31px;
   }
 }
 
@@ -352,5 +361,26 @@
     height: 40px;
     width: 48%;
     font-size: 16px;
+  }
+
+  .contact__info h3 {
+    font-size: 24px;
+  }
+
+  .contact__info strong {
+    font-size: 28px;
+  }
+
+  .contact__card-btn {
+    padding: 12px 35;
+  }
+
+  .contact-profile {
+    width: 220px;
+  }
+
+  .contact__one a,
+  .fa-envelope {
+    font-size: 20px;
   }
 }

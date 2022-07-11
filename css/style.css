@@ -700,6 +700,8 @@ span,
   border-radius: 15px;
   align-items: center;
   margin: 0 auto;
+  margin-top: 130px;
+  padding: 0 20px;
   background-color: var(--color-background-light);
 }
 
@@ -723,10 +725,12 @@ span,
 }
 
 .contact__info h3 {
+  text-align: center;
   font-size: 33px;
   color: var(--color-secondary);
   font-weight: 600;
   line-height: 55px;
+  margin: 0 auto;
 }
 
 .contact__info strong {
