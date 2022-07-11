@@ -217,7 +217,6 @@
     height: 225px;
     top: 29px;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -402,5 +401,9 @@
     height: 191px;
     top: 26px;
   }
-  
+
+  .contact__phone a,
+  .fa-phone {
+    font-size: 18px;
+  }
 }

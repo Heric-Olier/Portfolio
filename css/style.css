@@ -767,6 +767,15 @@ span,
   text-decoration: none;
 }
 
+.contact__phone a,
+.fa-phone {
+  color: var(--color-primary);
+  font-size: 21px;
+  text-decoration: none;
+  margin-bottom: 50px;
+
+}
+
 .border-contact {
   width: 225px;
   height: 225px;
