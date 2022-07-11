@@ -201,6 +201,10 @@
   .study__item {
     grid-template-columns: 1fr 1fr;
   }
+
+  .title__contact {
+    padding-bottom: 90px;
+  }
 }
 
 @media screen and (max-width: 768px) {
