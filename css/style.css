@@ -708,12 +708,14 @@ span,
 .contact-profile {
   width: 255px;
   display: flex;
+  align-items: center;
   justify-content: center;
   position: relative;
   bottom: 170px;
 }
 
 .contact-profile img {
+  z-index: 3;
   width: 100%;
   height: 100%;
 }
@@ -763,4 +765,10 @@ span,
   font-size: 25px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.border-contact {
+  width: 225px;
+  height: 225px;
+  top: 29px;
 }

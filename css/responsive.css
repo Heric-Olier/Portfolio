@@ -72,6 +72,12 @@
     padding: 0.55em 2.35em;
     font-size: 19px;
   }
+
+  .border-contact {
+    width: 225px;
+    height: 225px;
+    top: 29px;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -205,6 +211,13 @@
   .title__contact {
     padding-bottom: 130px;
   }
+
+  .border-contact {
+    width: 225px;
+    height: 225px;
+    top: 29px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -383,4 +396,11 @@
   .fa-envelope {
     font-size: 20px;
   }
+
+  .border-contact {
+    width: 191px;
+    height: 191px;
+    top: 26px;
+  }
+  
 }
