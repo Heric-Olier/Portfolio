@@ -304,7 +304,8 @@ span,
 .about__title,
 .skills__title,
 .study__title,
-.projects__title {
+.projects__title,
+.contact__title {
   text-decoration: underline;
   font-size: 46px;
   font-weight: 700;
@@ -315,7 +316,8 @@ span,
 .about__title strong,
 .skills__title strong,
 .study__title strong,
-.projects__title strong {
+.projects__title strong,
+.contact__title strong {
   color: var(--color-secondary);
 }
 
@@ -674,3 +676,13 @@ span,
   left: 100%;
   right: -100%;
 }
+
+/*! <--------- Study Section --------->*/
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 130px 0;
+  background-color: var(--color-background-dark);
+}
+
