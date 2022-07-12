@@ -22,19 +22,16 @@ function barsAnimation() {
   nav__menu.classList.toggle("active");
 }
 
-const menus = [about, skills, study, projects, contact];
+const menusSection = [about, skills, study, projects, contact];
 
-for (let i = 0; i < menus.length; i++) {
-  menus[i].addEventListener("click", function () {
+for (let i = 0; i < menusSection.length; i++) {
+  menusSection[i].addEventListener("click", function () {
     nav__menu.classList.toggle("active");
   });
-   
 }
 
 nav__menu.addEventListener("click", function () {
-    line1__bars.classList.toggle("active");
-    line2__bars.classList.toggle("active");
-    line3__bars.classList.toggle("active");
-    }
-    );
-    
+  line1__bars.classList.toggle("active");
+  line2__bars.classList.toggle("active");
+  line3__bars.classList.toggle("active");
+});
