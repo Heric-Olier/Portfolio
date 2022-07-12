@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   background: var(--color-background-dark);
   hyphens: auto;
 }
@@ -121,9 +121,9 @@ nav {
   color: var(--color-primary);
   white-space: nowrap;
   border-right: 4px solid var(--color-secondary);
-  width: 22ch;
-  animation: typing 2.8s steps(22),
-    blink 0.5s step-end forwards alternate infinite;
+  width: 24ch;
+  animation: typing 3s alternate infinite steps(24),
+    blink 0.5s step-end forwards;
   overflow: hidden;
 }
 
