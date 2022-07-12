@@ -456,6 +456,12 @@
     margin-top: 23px;
   }
 
+  .hero__social ul li,
+  .footer__social ul li {
+    margin: 0 10px;
+  }
+
+
   .skills__title {
     font-size: 40px;
   }
@@ -583,11 +589,11 @@
   }
 
   .projects__container {
-    width: 90%;
+    width: 93%;
   }
 
   .projects__card {
-    height: 250px;
+    height: 300px;
   }
 
   .projects__card h3 {
