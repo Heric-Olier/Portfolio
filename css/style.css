@@ -779,7 +779,13 @@ nav {
   font-size: 21px;
   text-decoration: none;
   margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
 }
+
+.contact__phone a:hover,
+.fa-phone:hover {
+  font-size: 25px;
+} 
 
 .fa-phone {
   margin-right: 3px;
