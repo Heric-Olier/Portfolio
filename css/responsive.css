@@ -145,8 +145,8 @@
   }
 
   .line3__bars-menu.active {
-    transform: rotate(-45deg);
-    translate: -4px, 2px;
+    transform: rotate(-40deg);
+    translate: -1px, 1px;
   }
 
   .nav__menu-mobile-icon {
@@ -172,7 +172,7 @@
     height: 100vh;
     padding: 70px 70px;
     background-color: var(--color-background-dark);
-    transition: all .3s ease-in-out;
+    transition: all 1s ease;
     clip-path: circle(150% at 100% 0%);
   }
 
