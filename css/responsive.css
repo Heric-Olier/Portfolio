@@ -383,6 +383,7 @@
 
   .hero__title {
     font-size: 28px;
+    text-align: center;
   }
 
   .hero__subtitle {
@@ -420,7 +421,9 @@
 
   .about,
   .skills,
-  .projects {
+  .projects,
+  .study,
+  .contact {
     padding: 65px 0;
   }
 
@@ -522,5 +525,115 @@
   .contact__phone a,
   .fa-phone {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about__title,
+  .skills__title,
+  .study__title,
+  .projects__title {
+    font-size: 37px;
+  }
+
+  .animated-border {
+    width: 210px;
+    height: 210px;
+  }
+
+  .hero__image {
+    padding-bottom: 35px;
+  }
+
+  .hero__image img {
+    width: 190px;
+  }
+
+  .hero__description {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  .hero__button {
+    height: 20px;
+    width: 140px;
+    font-size: 12px;
+    margin-top: 16px;
+  }
+
+  .hero__text {
+    padding-bottom: 80px;
+  }
+
+  .hero__title {
+    font-size: 25px;
+  }
+
+  .hero__subtitle {
+    margin-top: 12px;
+  }
+
+  .hero__social ul li,
+  .footer__social ul li {
+    margin: 0 7px;
+  }
+
+  .study__container {
+    width: 90%;
+  }
+
+  .projects__container {
+    width: 90%;
+  }
+
+  .projects__card {
+    height: 250px;
+  }
+
+  .projects__card h3 {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
+  .projects__btn {
+    padding: 0 10px 10px 10px;
+  }
+
+  .projects__btn a {
+    padding: 0.35em 1.05em;
+    height: 30px;
+    width: 48%;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+
+  .nav__menu ul li a {
+    font-size: 22px;
+  }
+
+  .skills__logo p {
+    font-size: 15px;
+  }
+
+  .contact__item {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .contact-profile {
+    width: 205px;
+  }
+
+  .border-contact {
+    width: 177px;
+    height: 177px;
+  }
+
+  .contact__card-btn {
+    padding: 17px 45;
+  }
+
+  .footer__reserved {
+    font-size: 15px;
   }
 }
