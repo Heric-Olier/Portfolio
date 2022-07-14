@@ -12,4 +12,4 @@
 
 ---
 
-## [ir a la pagina](https://heric-olier.github.io/Portfolio/) 👈
+## [ir a la pagina](https://heric-olier-frontend-developer.netlify.app/index.html) 👈
