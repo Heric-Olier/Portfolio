@@ -309,6 +309,10 @@
     height: 225px;
     top: 29px;
   }
+
+  .top-button {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -543,8 +547,8 @@
   }
 
   .animated-border {
-    width: 210px;
-    height: 210px;
+    width: 190px;
+    height: 190px;
   }
 
   .hero__image {
@@ -552,7 +556,7 @@
   }
 
   .hero__image img {
-    width: 190px;
+    width: 170px;
   }
 
   .hero__description {
