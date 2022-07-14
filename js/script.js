@@ -1,3 +1,15 @@
+//*! scroll up *//
+
+const topButton = document.querySelector(".top-button");
+
+document.addEventListener("scroll", function () {
+  if (window.scrollY >= 200) {
+    topButton.classList.add("active");
+  } else {
+    topButton.classList.remove("active");
+  }
+});
+
 //*! Burguer Menu *//
 
 let line1__bars = document.querySelector(".line1__bars-menu");

@@ -122,9 +122,9 @@ nav {
   white-space: nowrap;
   border-right: 4px solid var(--color-secondary);
   width: 24ch;
-  animation: typing 3s alternate infinite steps(24),
-    blink 0.5s step-end forwards;
   overflow: hidden;
+  animation: typing 3s alternate infinite steps(24, end),
+    blink 1s alternate infinite steps(24);
 }
 
 @keyframes typing {
@@ -149,15 +149,15 @@ nav {
 }
 
 .hero__button {
-  margin-top: 33px;
-  width: 150px;
-  height: 29px;
+  margin-top: 28px;
+  width: 140px;
+  height: 25px;
   border-radius: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.17s ease-in-out;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   text-decoration: none;
   background-color: var(--color-secondary);
@@ -170,7 +170,7 @@ nav {
 }
 
 .fa-download {
-  font-size: 11px;
+  font-size: 10px;
   margin-left: 5px;
 }
 
@@ -838,4 +838,54 @@ nav {
   font-size: 20px;
   margin-right: 20px;
   color: var(--color-quaternary);
+}
+
+/*! <--------- top Button --------->*/
+
+.top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  border-radius: 9px;
+  font-weight: 900;
+  opacity: 0;
+  width: 43px;
+  height: 43px;
+  color: var(--color-background-dark);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
+  cursor: pointer;
+  transform: scale(0);
+  transition: transform .5s ease;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s; 
+}
+
+.top-button.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  border-radius: 9px;
+  font-weight: 900;
+  opacity: 1;
+  width: 43px;
+  height: 43px;
+  color: var(--color-background-dark);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.top-button:hover {
+  transform: scale(1.1);
+  transition: transform .5s ease;
 }
