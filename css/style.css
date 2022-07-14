@@ -859,33 +859,18 @@ nav {
   z-index: 20;
   cursor: pointer;
   transform: scale(0);
-  transition: transform .5s ease;
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-delay: 0s; 
+  transition: transform 0.5s ease;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 
 .top-button.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-secondary);
-  border-radius: 9px;
-  font-weight: 900;
-  opacity: 1;
-  width: 43px;
-  height: 43px;
-  color: var(--color-background-dark);
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 20;
-  cursor: pointer;
   transform: scale(1);
 }
 
 .top-button:hover {
   transform: scale(1.1);
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
