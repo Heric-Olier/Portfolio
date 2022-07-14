@@ -1,6 +1,6 @@
 //*! scroll up *//
 
-const topButton = document.querySelector(".top-button");
+let topButton = document.querySelector(".top-button");
 
 document.addEventListener("scroll", function () {
   if (window.scrollY >= 200) {

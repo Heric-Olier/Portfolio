@@ -8,6 +8,10 @@
   --color-quinary: #fd843f;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   background: var(--color-background-dark);
@@ -842,6 +846,7 @@ nav {
 
 /*! <--------- top Button --------->*/
 
+
 .top-button {
   display: flex;
   justify-content: center;
@@ -856,25 +861,21 @@ nav {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 20;
   cursor: pointer;
   transform: scale(0);
-  transition: transform .5s ease;
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-delay: 0s; 
+  transition: transform 0.5s ease;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 
 .top-button.active {
-opacity: 1;
+  opacity: 1;
   transform: scale(1);
-  transition: transform .5s ease;
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-delay: 0s; 
+  transition: 0.5s ease-in-out;
 }
+
 
 .top-button:hover {
   transform: scale(1.1);
