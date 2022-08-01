@@ -604,8 +604,7 @@ nav {
 .projects__card h3 {
   font-size: 30px;
   color: var(--color-background-dark);
-  font-weight: 600;
-  text-decoration: underline;
+  font-weight: 900;
   margin-top: 25px;
   position: absolute;
   top: 0;
