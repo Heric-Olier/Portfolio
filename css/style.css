@@ -158,8 +158,8 @@ nav {
 .hero__description {
   font-size: 16px;
   font-weight: 400;
-  margin-top: 15px;
-  line-height: 25px;
+  margin-top: 20px;
+  line-height: 23px;
   text-align: end;
   color: var(--color-quaternary);
 }
