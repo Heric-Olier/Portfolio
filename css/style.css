@@ -844,23 +844,38 @@ nav {
 
 .footer__reserved {
   display: flex;
-  color: var(--color-primary);
-  font-size: 17px;
+  color: var(--color-quaternary);
+  font-size: 16px;
+  text-decoration: none;
   font-weight: 500;
   align-items: center;
+  text-align: center;
+  line-height: 25px;
+}
+
+.footer__reserved a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__reserved a:hover {
+  color: var(--color-secondary);
 }
 
 .footer__reserved p em,
 .fa-copyright {
-  color: var(--color-secondary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .footer__reserved p strong {
   font-weight: 700;
-  font-size: 20px;
   margin-right: 20px;
   color: var(--color-quaternary);
+}
+
+.fa-heart {
+  color: var(--color-secondary)
 }
 
 /*! <--------- top Button --------->*/

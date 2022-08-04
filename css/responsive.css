@@ -508,6 +508,10 @@
   .fa-phone {
     font-size: 18px;
   }
+
+  .footer__reserved {
+    font-size: 13.2px;
+  }
 }
 
 @media screen and (max-width: 360px) {
