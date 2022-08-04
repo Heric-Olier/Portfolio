@@ -1,3 +1,35 @@
+
+let navBurguer = document.querySelector(".nav__burguer");
+let navMenu = document.querySelector(".nav__menu");
+let navMenuItems = document.querySelectorAll(".nav__menu ul li");
+let navBurguerLine1 = document.querySelector(".nav__burguer-line-1");
+let navBurguerLine2 = document.querySelector(".nav__burguer-line-2");
+let navBurguerLine3 = document.querySelector(".nav__burguer-line-3");
+
+//*!--------------- Burguer Menu ---------------*//
+
+// El menu se muestra y se oculta con un click en el icono de hamburguesa
+
+navBurguer.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  navBurguerLine1.classList.toggle("active");
+  navBurguerLine2.classList.toggle("active");
+  navBurguerLine3.classList.toggle("active");
+  navBurguer.classList.toggle("active");
+});
+
+// El menú se cierra al hacer click en un elemento del mismo
+
+navMenuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    navBurguerLine1.classList.toggle("active");
+    navBurguerLine2.classList.toggle("active");
+    navBurguerLine3.classList.toggle("active");
+    navBurguer.classList.toggle("active");
+  });
+});
+
 //*! scroll up *//
 
 let topButton = document.querySelector(".top-button");
@@ -8,42 +40,4 @@ document.addEventListener("scroll", function () {
   } else {
     topButton.classList.remove("active");
   }
-});
-
-//*! Burguer Menu *//
-
-let line1__bars = document.querySelector(".line1__bars-menu");
-let line2__bars = document.querySelector(".line2__bars-menu");
-let line3__bars = document.querySelector(".line3__bars-menu");
-let nav__menu = document.querySelector(".nav__menu");
-let about = document.querySelector(".about__section");
-let skills = document.querySelector(".skills__section");
-let study = document.querySelector(".study__section");
-let projects = document.querySelector(".projects__section");
-let contact = document.querySelector(".contact__section");
-
-document
-  .querySelector(".nav__menu-mobile")
-  .addEventListener("click", barsAnimation);
-
-function barsAnimation() {
-  line1__bars.classList.toggle("active");
-  line2__bars.classList.toggle("active");
-  line3__bars.classList.toggle("active");
-
-  nav__menu.classList.toggle("active");
-}
-
-const menusSection = [about, skills, study, projects, contact];
-
-for (let i = 0; i < menusSection.length; i++) {
-  menusSection[i].addEventListener("click", function () {
-    nav__menu.classList.toggle("active");
-  });
-}
-
-nav__menu.addEventListener("click", function () {
-  line1__bars.classList.toggle("active");
-  line2__bars.classList.toggle("active");
-  line3__bars.classList.toggle("active");
 });

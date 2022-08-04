@@ -3,13 +3,6 @@
 }
 
 @media screen and (max-width: 1160px) {
-  .nav__container,
-  .hero__container,
-  .about,
-  .title__container {
-    max-width: 980px;
-  }
-
   .hero__image {
     width: 370px;
   }
@@ -36,11 +29,11 @@
   }
 
   .about__image {
-    width: 430px;
+    width: 420px;
   }
 
   .about__image img {
-    width: 430px;
+    width: 420px;
   }
 
   .about__subtitle {
@@ -48,8 +41,8 @@
   }
 
   .about__text {
-    width: 480px;
-    max-width: 480px;
+    width: 420px;
+    max-width: 420px;
   }
 
   .about__description,
@@ -111,51 +104,36 @@
 
   /* Hamburguer Menu */
 
-  .nav__menu-mobile {
-    display: flex;
-    flex-direction: column;
-    height: 36px;
-    width: 41px;
-    align-items: center;
-    z-index: 5;
-    color: var(--color-secondary);
-    cursor: pointer;
-  }
-
-  .nav__menu-mobile span {
+  .nav__burguer {
+    width: 35px;
     display: block;
-    width: 33px;
-    height: 5px;
-    margin-top: 4px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .nav__burguer-line-1,
+  .nav__burguer-line-2,
+  .nav__burguer-line-3 {
+    display: block;
     background-color: var(--color-secondary);
-    border-radius: 40px;
-    transform-origin: 3px 100%;
-    transition: all 350ms;
-    cursor: pointer;
+    content: "";
+    height: 6px;
+    border-radius: 3px;
+    margin: 4px 0;
+    transition: all 450ms ease-in-out;
   }
 
-  .line1__bars-menu.active {
-    transform: rotate(45deg);
-    translate: -2px, 1px;
+  .nav__burguer-line-1.active {
+    transform: translatey(8px) rotate(135deg);
   }
 
-  .line2__bars-menu.active {
+  .nav__burguer-line-2.active {
+    transform: translate(-20px, -2px);
     opacity: 0;
-    margin-left: -30px;
   }
 
-  .line3__bars-menu.active {
-    transform: rotate(-40deg);
-    translate: -1px, 1px;
-  }
-
-  .nav__menu-mobile-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 33px;
-    cursor: pointer;
-    color: var(--color-secondary);
+  .nav__burguer-line-3.active {
+    transform: translatey(-12px) rotate(-135deg);
   }
 
   .nav__menu {
@@ -168,7 +146,7 @@
     height: 100vh;
     padding: 70px 70px;
     background-color: var(--color-background-dark);
-    transition: all 1s ease;
+    transition: all 850ms ease;
     clip-path: circle(0% at 100% 0%);
   }
 
@@ -205,23 +183,27 @@
     font-size: 25px;
   }
 
+  .hero__container {
+    padding: 130px 0;
+  }
+
   .hero__image {
     width: 350px;
     justify-content: center;
-    padding-top: 90px;
   }
 
   .animated-border {
-    width: 270px;
-    height: 270px;
+    width: 300px;
+    height: 300px;
   }
 
   .hero__image img {
-    width: 250px;
+    width: 275px;
   }
 
   .hero__text {
     width: 95%;
+    padding-top: 60px;
     align-items: center;
   }
 
@@ -237,7 +219,7 @@
     margin: 0 10px;
   }
 
-  .hero__container,
+  .hero__container-content,
   .about__container {
     flex-direction: column;
     /* height: auto; */
@@ -381,42 +363,36 @@
 }
 
 @media screen and (max-width: 480px) {
-  .hero__text {
-    padding-bottom: 80px;
-  }
-
   .hero__title {
-    font-size: 28px;
+    font-size: 31px;
     text-align: center;
   }
 
   .hero__subtitle {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .hero__description {
-    font-size: 13.5px;
-    text-align: center;
+    font-size: 14px;
+    text-align: justify;
   }
 
   .hero__image {
     width: 100%;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 20px;
   }
 
   .animated-border {
-    width: 238px;
-    height: 238px;
-    border: 12px var(--color-secondary);
-    border-top: 12px var(--color-background-dark);
+    width: 255px;
+    height: 255px;
+    border: 14px var(--color-secondary);
+    border-top: 14px var(--color-background-dark);
     border-radius: 50%;
     border-style: outset;
   }
 
   .hero__image img {
-    width: 225px;
+    width: 230px;
   }
 
   .hero__social ul li {
@@ -428,7 +404,7 @@
   .projects,
   .study,
   .contact {
-    padding: 65px 0;
+    padding: 65px 25px;
   }
 
   .about__image img {
@@ -456,15 +432,10 @@
     height: 23px;
   }
 
-  .hero__social {
-    margin-top: 23px;
-  }
-
   .hero__social ul li,
   .footer__social ul li {
     margin: 0 10px;
   }
-
 
   .skills__title {
     font-size: 40px;
@@ -546,17 +517,29 @@
     font-size: 37px;
   }
 
-  .animated-border {
-    width: 190px;
-    height: 190px;
+  .about,
+  .skills,
+  .projects,
+  .study,
+  .contact {
+    padding: 65px 5px;
   }
 
-  .hero__image {
-    padding-bottom: 35px;
+  .animated-border {
+    width: 197px;
+    height: 197px;
+    border: 11px var(--color-secondary);
+    border-top: 11px var(--color-background-dark);
+    border-radius: 50%;
+    border-style: outset;
   }
 
   .hero__image img {
-    width: 170px;
+    width: 180px;
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
   }
 
   .hero__description {
@@ -571,12 +554,8 @@
     margin-top: 16px;
   }
 
-  .hero__text {
-    padding-bottom: 80px;
-  }
-
   .hero__title {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   .hero__subtitle {
@@ -640,7 +619,7 @@
   }
 
   .contact__card-btn {
-    padding: 17px 45;
+    padding: 17px 45px;
   }
 
   .footer__reserved {
