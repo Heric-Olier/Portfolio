@@ -293,9 +293,6 @@
     top: 29px;
   }
 
-  .top-button {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -511,6 +508,12 @@
 
   .footer__reserved {
     font-size: 13.2px;
+  }
+  .top-button {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(43, 235, 91, 0.356);
   }
 }
 
