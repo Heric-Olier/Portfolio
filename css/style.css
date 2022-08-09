@@ -875,7 +875,7 @@ nav {
 }
 
 .fa-heart {
-  color: var(--color-secondary)
+  color: var(--color-secondary);
 }
 
 /*! <--------- top Button --------->*/
@@ -900,9 +900,4 @@ nav {
 
 .top-button.active {
   transform: scale(1);
-  transition: 0.5s ease-in-out;
-}
-
-.top-button:hover {
-  transform: scale(1.1);
 }

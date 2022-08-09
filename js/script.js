@@ -30,10 +30,11 @@ navMenuItems.forEach((item) => {
   });
 });
 
-//*!---------------- scroll up -------------------*//
+//*!--------------- scroll up & Top Button ---------------*//
 
+// El botón de subir se muestra y se oculta con el scroll
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 200) {
+  if (window.scrollY > 100) {
     topButton.classList.add("active");
   } else {
     topButton.classList.remove("active");
