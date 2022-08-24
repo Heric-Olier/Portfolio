@@ -457,13 +457,32 @@
     height: 320px;
   }
 
+  .projects__card-description-hover {
+    width: 92%;
+    height: 66%;
+    top: 2.9rem;
+    padding: 10px;
+  }
+
+  .projects__card-decription-text {
+    font-size: 13.2px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .used-technologies p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
   .projects__card h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 20px;
   }
 
   .projects__btn {
-    padding: 0 15px 15px 15px;
+    padding: 0 12px 12px 12px;
   }
 
   .projects__btn a {
@@ -586,8 +605,19 @@
     height: 300px;
   }
 
+  .projects__card-description-hover {
+    height: 72%;
+    top: 2.2rem;
+  }
+
+  .projects__card-decription-text {
+    font-size: 13.2px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+
   .projects__card h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 12px;
   }
 
