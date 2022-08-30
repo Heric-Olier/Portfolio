@@ -144,6 +144,7 @@
     right: 0;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
     padding: 70px 70px;
     background-color: var(--color-background-dark);
     transition: all 850ms ease;
