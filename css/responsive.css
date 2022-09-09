@@ -282,6 +282,7 @@
 
   .study__item {
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 40px;
   }
 
   .title__contact {
@@ -292,6 +293,10 @@
     width: 225px;
     height: 225px;
     top: 29px;
+  }
+
+  .contact__icons {
+    display: none;
   }
 }
 
