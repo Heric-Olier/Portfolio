@@ -82,7 +82,7 @@ nav.active {
   color: var(--color-primary);
   font-size: 18px;
   font-weight: 800;
-  transition: all 0.17s ease-in-out;
+
 }
 
 .nav__menu ul li a:hover {
@@ -650,29 +650,29 @@ nav.active {
   border-radius: 15px;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
   background-color: var(--color-background-light);
   transition: all 0.25s ease-in-out;
 }
 
 .projects__card:hover {
   box-shadow: 0px 0px 20px rgb(0, 0, 0);
-  transform: scale(1.04);
+  transform: translateY(0);
 }
 
 .projects__card-description-area {
   position: absolute;
-  backdrop-filter: blur(4px);
-  background-color: rgba(94, 94, 94, 0.404);
+  /* backdrop-filter: blur(4px); */
+  background-color: var(--color-background-dark);
   width: 100%;
   height: 100%;
-  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.55s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform: translateY(100%);
+  transition: all 0.35s ease-in-out;
 }
+
 
 .projects__card:hover .projects__card-description-area {
   opacity: 1;
@@ -685,18 +685,19 @@ nav.active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   padding: 28px;
   top: 5rem;
   width: 86%;
   height: 60%;
   border-radius: 15px;
-  background-color: var(--color-primary);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+  background-color: var(--color-background-light);
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 23%);
   transform: scale(0);
   z-index: 1;
   transition: all 0.55s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
+
 
 .projects__card-description-hover:hover {
   opacity: 1;
@@ -707,7 +708,7 @@ nav.active {
   line-height: 22px;
   font-weight: 400;
   text-align: justify;
-  color: var(--color-background-dark);
+  color: var(--color-primary);
   margin-bottom: 24px;
 }
 
@@ -754,7 +755,7 @@ nav.active {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: var(--color-background-dark);
+  color: var(--color-secondary);
   margin-bottom: 16px;
 }
 
@@ -777,7 +778,18 @@ nav.active {
   text-align: center;
   position: absolute;
   top: 0;
+  transition: all 0.85s ease-in-out;
 }
+
+.projects__card:hover h3 {
+  color: var(--color-secondary);
+}
+
+.projects__card:hover .projects__btn a {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
 
 .projects__btn {
   width: 100%;
@@ -812,18 +824,18 @@ nav.active {
   color: var(--color-primary);
   cursor: pointer;
   text-decoration: none;
-  /* transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__btn a:hover {
   background-color: transparent;
-  color: var(--color-background-dark);
+  color: var(--color-background-dark) !important;
   font-weight: 600;
 }
 
 .projects__btn a::after {
   content: "";
-  background: #ecf0f1;
+  background: var(--color-secondary);
   position: absolute;
   z-index: -1;
   padding: 0.75em 3.75em;

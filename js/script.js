@@ -6,6 +6,7 @@ const navBurguerLine2 = document.querySelector(".nav__burguer-line-2");
 const navBurguerLine3 = document.querySelector(".nav__burguer-line-3");
 const topButton = document.querySelector(".top-button");
 const nav = document.querySelector("nav");
+const allSections = document.querySelectorAll("section[id]");
 
 //*!--------------- Burguer Menu ---------------*//
 
@@ -26,12 +27,6 @@ navBurguer.addEventListener("click", () => {
 navMenuItems.forEach((item) => {
   item.addEventListener("click", () => {
     showNavMenu();
-
-    //dejamos seleccionado el elemento del menú que se ha clickeado
-    navMenuItems.forEach((item) => {
-      item.classList.remove("active");
-    });
-    item.classList.add("active");
   });
 });
 
@@ -47,9 +42,22 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("active");
     navMenuItems.forEach((item) => {
       item.classList.remove("active");
-    });
+    }); 
   }
 });
+
+// se selecciona el item del nav que corresponde a la sección en la que se encuentra el scroll
+allSections.forEach((section) => {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= section.offsetTop - 100) {
+      navMenuItems.forEach((item) => {
+        item.classList.remove("active");
+      });
+      document.querySelector(`.nav__menu ul li a[href*=${section.id}]`).classList.add("active");
+    }
+  });
+});
+
 
 //*!--------------- Typed text ---------------*//
 
