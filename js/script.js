@@ -40,3 +40,15 @@ window.addEventListener("scroll", () => {
     topButton.classList.remove("active");
   }
 });
+
+
+//*!--------------- Typed text ---------------*//
+
+var typed = new Typed('.hero__subtitle', {
+  strings: ['Desarrollador Web Front-End.'],
+  typeSpeed: 60,
+  backSpeed: 60,
+  backDelay: 2800,
+  startDelay: 1200,
+  loop: true,
+});
