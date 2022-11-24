@@ -1,4 +1,4 @@
-ScrollReveal({reset: true})
+// ScrollReveal({reset: true})
 
 ScrollReveal().reveal('.hero__text', {
     origin: 'left',
