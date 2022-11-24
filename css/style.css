@@ -412,6 +412,10 @@ nav.active {
   transition: all 0.3s ease-in-out;
 }
 
+.about__container {
+  overflow: hidden;
+}
+
 /* about left */
 
 .about__subtitle {
