@@ -564,7 +564,7 @@ nav.active {
   position: relative;
   margin: 0 auto;
   background-color: var(--color-background-light);
-  transition: all 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .study__title-card {
@@ -607,7 +607,7 @@ nav.active {
 
 .study__card:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
-  transform: scale(1.11);
+  transform: scale(1.11) !important;
 }
 
 .study__card img {
