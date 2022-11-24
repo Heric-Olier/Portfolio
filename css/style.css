@@ -16,6 +16,7 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
   background: var(--color-background-dark);
   hyphens: auto;
+  overflow-x: hidden;
 }
 
 /*! <--------- Header Nav Section --------->*/
@@ -31,8 +32,8 @@ nav {
   height: 73px;
   transition: all 0.3s ease-in-out;
   background-color: var(--color-background-dark);
-  box-shadow: 0 0px 16px -6px rgb(5 5 5 / 30%),
-    0 25px 10px -24px rgb(5 5 5 / 10%);
+  border-bottom: 1px solid var(--color-background-light);
+  box-shadow: 0 1rem 4rem -0.5rem #000;
 }
 
 nav.active {
@@ -656,7 +657,7 @@ nav.active {
 }
 
 .projects__card:hover {
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
   transform: translateY(0);
 }
 
@@ -687,21 +688,19 @@ nav.active {
   flex-direction: column;
   padding: 28px;
   top: 5rem;
+  transform: translateY(100%);
   width: 86%;
   height: 60%;
   border-radius: 15px;
   background-color: var(--color-background-light);
   box-shadow: 0px 0px 10px rgb(0 0 0 / 23%);
-  transform: scale(0);
   z-index: 1;
-  transition: all 0.55s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-
-
-.projects__card-description-hover:hover {
+/* .projects__card-description-hover:hover {
   opacity: 1;
-}
+} */
 
 .projects__card-decription-text {
   font-size: 15px;
@@ -733,9 +732,12 @@ nav.active {
   transform: scale(1.2);
 }
 
-.projects__card:hover .used-technologies ul,
-.projects__card:hover .projects__card-description-hover {
+.projects__card:hover .used-technologies ul {
   transform: scale(1);
+}
+
+.projects__card:hover .projects__card-description-hover {
+  transform: translateY(0);
 }
 
 .used-technologies ul li {

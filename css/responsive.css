@@ -91,6 +91,10 @@
     z-index: 9999;
   }
 
+  .nav__logo a {
+    color: #fff;
+  }
+
   .nav__container {
     width: 90%;
     height: 62px;
@@ -388,14 +392,14 @@
   .animated-border {
     width: 255px;
     height: 255px;
-    border: 14px var(--color-secondary);
-    border-top: 14px var(--color-background-dark);
+    border: 12px var(--color-secondary);
+    border-top: 12px var(--color-background-dark);
     border-radius: 50%;
     border-style: outset;
   }
 
   .hero__image img {
-    width: 230px;
+    width: 236px;
   }
 
   .hero__social ul li {
