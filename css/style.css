@@ -1030,6 +1030,7 @@ nav.active {
   display: flex;
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
   bottom: 95px;
   transition: all 0.3s ease-in-out;
 }
